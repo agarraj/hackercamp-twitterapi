@@ -8,16 +8,19 @@ DB name: myDB
 
 
 #### API 1:  
-To search a keyword:  
-file: hackercamp-twitterapi/api/routes/searchKeyword.js  
-request: localhost:3000/searchKeyword/<key word>  
+##### To search a keyword:  
+file: ```hackercamp-twitterapi/api/routes/searchKeyword.js```  
+
+request: ```localhost:3000/searchKeyword/<key word>```  
 eg: ```localhost:3000/searchKeyword/modi```  
 
 Variable countTweetsToDisplay sets the limit on the number of tweets which will be fetched and sent in response and stored in database.
 
 
 #### API 2:  
-NOTE: Each page contains 5 results.  
+NOTE: Each page contains ```5``` results.  
+
+##### Search
 
 To search a username:  
 request: ```localhost:3000/searchTT?username=<username>&page=<page no>```  
@@ -35,6 +38,8 @@ To search tweets of a particular language (language should be provided according
 request: ```localhost:3000/searchTT?language=<language code>&page=<page no>```  
 eg: ```localhost:3000/searchTT?language=en&page=10```  
 
+
+##### Filter
 
 Filter requests follow following format:
 ```localhost:3000/filter/<FILTERING_FIELD>?<FILTERING_CRITERIA>=<FILTER_STRING>&page=<page no>```  
@@ -68,6 +73,7 @@ To filter tweets in which user_mentions contain "rajat"
 ```localhost:3000/filter/user_mentions?contains=rajat&page=1```  
 
 
+##### Count
 Count requests follow following format:  
 ```localhost:3000/counts?<COUNT_FIELD>=<VALUE>&comparator=<CONDITION>&page=<PAGE NO>```  
 
@@ -96,7 +102,7 @@ Sort tweets on basis of datetime in descending order:
 
 
 #### API 3:
-Query response returned in API 2 is saved in file.csv
+Query response returned in API 2 is saved in ```file.csv```  
 
 
 

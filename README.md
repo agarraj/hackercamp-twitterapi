@@ -40,55 +40,56 @@ Filter requests follow following format:
 ```localhost:3000/filter/<FILTERING_FIELD>?<FILTERING_CRITERIA>=<FILTER_STRING>&page=<page no>```  
 
 ```FILTERING_FIELD``` can be one of following (without angle brackets):  
-  ```username  
-  screen_name  
-  tweettext  
-  urls  
-  user_mentions```  
+  ```username```    
+  ```screen_name```  
+  ```tweettext```  
+  ```urls```  
+  ```user_mentions```  
   
-FILTERING_CRITERIA can be one of the following:
-  startswith
-  endswith
-  contains
+```FILTERING_CRITERIA``` can be one of the following:  
+  ```startswith```  
+  ```endswith```  
+  ```contains```  
 
 eg:
-To filter username starting with a given string say "ra":
-localhost:3000/filter/username?startswith=ra&page=1
+To filter username starting with a given string say "ra":  
+```localhost:3000/filter/username?startswith=ra&page=1```  
 
-To filter screen_name ending with a given string say "at":
-localhost:3000/filter/screen_name?endswith=at&page=1
+To filter screen_name ending with a given string say "at":  
+```localhost:3000/filter/screen_name?endswith=at&page=1```  
 
-To filter tweettext contains a string "modi"
-localhost:3000/filter/tweettext?contains=modi&page=1
+To filter tweettext contains a string "modi"  
+```localhost:3000/filter/tweettext?contains=modi&page=1```  
 
-To filter urls starting with "http://twitter"
-localhost:3000/filter/urls?startswith=http://twitter &page=1
+To filter urls starting with "http://twitter"  
+```localhost:3000/filter/urls?startswith=http://twitter &page=1```  
 
-To filter tweets in which user_mentions contain "rajat"
-localhost:3000/filter/user_mentions?contains=rajat&page=1
+To filter tweets in which user_mentions contain "rajat"  
+```localhost:3000/filter/user_mentions?contains=rajat&page=1```  
 
 
-Count requests follow following format:
-localhost:3000/counts?<COUNT_FIELD>=<VALUE>&comparator=<CONDITION>&page=<PAGE NO>
-COUNT_FIELD can be one of the following:
-  retweet_count
-  favorite_count
-  userfollower_count
-comparator CONDITION can be one of the following:
-  eq for equal
-  lt for less than
-  gt for greater than
+Count requests follow following format:  
+```localhost:3000/counts?<COUNT_FIELD>=<VALUE>&comparator=<CONDITION>&page=<PAGE NO>```  
+```COUNT_FIELD``` can be one of the following:  
+  ```retweet_count```  
+  ```favorite_count```  
+  ```userfollower_count```  
+
+comparator ```CONDITION``` can be one of the following:  
+  ```eq``` for equal  
+  ```lt``` for less than  
+  ```gt``` for greater than  
   
-eg:
-localhost:3000/counts?favorite_count=5&comparator=gt&page=5
-localhost:3000/counts?retweet_count=5&comparator=lt&page=5
-localhost:3000/counts?userfollower_count=5&comparator=eq&page=5
+eg:  
+```localhost:3000/counts?favorite_count=5&comparator=gt&page=5```  
+```localhost:3000/counts?retweet_count=5&comparator=lt&page=5```  
+```localhost:3000/counts?userfollower_count=5&comparator=eq&page=5```  
 
 
-Sort tweets on basis of datetime in ascending order:
-localhost:3000/datetime/sort_asc?page=<page no>
-Sort tweets on basis of datetime in descending order:
-localhost:3000/datetime/sort_desc?page=<page no>
+Sort tweets on basis of datetime in ascending order:  
+```localhost:3000/datetime/sort_asc?page=<page no>```  
+Sort tweets on basis of datetime in descending order:  
+```localhost:3000/datetime/sort_desc?page=<page no>```  
 
 
 

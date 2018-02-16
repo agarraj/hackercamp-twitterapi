@@ -1,6 +1,7 @@
 # hackercamp-twitterapi
 ### twitter search API
 
+To run server: ```node server.js```  
 Server is listening on port no ```3000```  
 Database used: MongoDB ```2.2.33```  
 DB port no: ```27017```  

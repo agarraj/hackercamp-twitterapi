@@ -1,13 +1,13 @@
 # hackercamp-twitterapi
-TWITTER SEARCH API
+### twitter search API
 
-Server is listening on port no 3000
-Database used: MongoDB 2.2.33
-DB port no: 27017
-DB name: myDB
+Server is listening on port no ```3000```  
+Database used: MongoDB ```2.2.33```  
+DB port no: ```27017```  
+DB name: myDB  
 
 
-API 1:
+#### API 1:
 To search a keyword:
 file: hackercamp-twitterapi/api/routes/searchKeyword.js
 request: localhost:3000/searchKeyword/<key word>
@@ -16,7 +16,7 @@ eg: localhost:3000/searchKeyword/modi
 Variable countTweetsToDisplay sets the limit on the number of tweets which will be fetched and sent in response and stored in database.
 
 
-API 2:
+#### API 2:
 NOTE: Each page contains 5 results.
 
 To search a username:
@@ -92,7 +92,7 @@ localhost:3000/datetime/sort_desc?page=<page no>
 
 
 
-API 3:
+#### API 3:
 Query response returned in API 2 is saved in file.csv
 
 

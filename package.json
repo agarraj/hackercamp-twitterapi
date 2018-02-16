@@ -1,0 +1,24 @@
+{
+  "name": "twitterapi",
+  "version": "1.0.0",
+  "description": "twitter api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rajat",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "json2csv": "^3.11.5",
+    "jsonexport": "^2.0.11",
+    "mongodb": "^2.2.33",
+    "mongoose": "^5.0.5",
+    "morgan": "^1.9.0",
+    "twit": "^2.2.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  }
+}

@@ -7,37 +7,37 @@ DB port no: ```27017```
 DB name: myDB  
 
 
-#### API 1:
-To search a keyword:
-file: hackercamp-twitterapi/api/routes/searchKeyword.js
-request: localhost:3000/searchKeyword/<key word>
-eg: localhost:3000/searchKeyword/modi
+#### API 1:  
+To search a keyword:  
+file: hackercamp-twitterapi/api/routes/searchKeyword.js  
+request: localhost:3000/searchKeyword/<key word>  
+eg: ```localhost:3000/searchKeyword/modi```  
 
 Variable countTweetsToDisplay sets the limit on the number of tweets which will be fetched and sent in response and stored in database.
 
 
-#### API 2:
-NOTE: Each page contains 5 results.
+#### API 2:  
+NOTE: Each page contains 5 results.  
 
-To search a username:
-request: localhost:3000/searchTT?username=<username>&page=<page no>
-eg: localhost:3000/searchTT?username=rajat&page=3
+To search a username:  
+request: ```localhost:3000/searchTT?username=<username>&page=<page no>```  
+eg: ```localhost:3000/searchTT?username=rajat&page=3```  
 
-To search a tweet text:
-request: localhost:3000/searchTT?tweettext=<text of tweet>&page=<page no>
-eg: localhost:3000/searchTT?tweettext=happy birthday&page=2
+To search a tweet text:  
+request: ```localhost:3000/searchTT?tweettext=<text of tweet>&page=<page no>```  
+eg: ```localhost:3000/searchTT?tweettext=happy birthday&page=2```  
   
 To search screen name of a user:
-request: localhost:3000/searchTT?screen_name=<screen name>&page=<page no>
-eg: localhost:3000/searchTT?screen_name=rajat.a&page=1
+request: ```localhost:3000/searchTT?screen_name=<screen name>&page=<page no>```  
+eg: ```localhost:3000/searchTT?screen_name=rajat.a&page=1```  
   
 To search tweets of a particular language (language should be provided according to twitter codes eg. en for English):
-request: localhost:3000/searchTT?language=<language code>&page=<page no>
-eg: localhost:3000/searchTT?language=en&page=10
+request: ```localhost:3000/searchTT?language=<language code>&page=<page no>```  
+eg: ```localhost:3000/searchTT?language=en&page=10```  
 
 
 Filter requests follow following format:
-localhost:3000/filter/<FILTERING_FIELD>?<FILTERING_CRITERIA>=<FILTER_STRING>&page=<page no>
+```localhost:3000/filter/<FILTERING_FIELD>?<FILTERING_CRITERIA>=<FILTER_STRING>&page=<page no>```  
 
 FILTERING_FIELD can be one of following (without angle brackets):
   username

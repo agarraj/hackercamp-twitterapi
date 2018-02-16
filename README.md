@@ -39,14 +39,14 @@ eg: ```localhost:3000/searchTT?language=en&page=10```
 Filter requests follow following format:
 ```localhost:3000/filter/<FILTERING_FIELD>?<FILTERING_CRITERIA>=<FILTER_STRING>&page=<page no>```  
 
-```FILTERING_FIELD``` can be one of following (without angle brackets):  
+FILTERING_FIELD can be one of following (without angle brackets):  
   ```username```    
   ```screen_name```  
   ```tweettext```  
   ```urls```  
   ```user_mentions```  
   
-```FILTERING_CRITERIA``` can be one of the following:  
+FILTERING_CRITERIA can be one of the following:  
   ```startswith```  
   ```endswith```  
   ```contains```  
@@ -70,12 +70,13 @@ To filter tweets in which user_mentions contain "rajat"
 
 Count requests follow following format:  
 ```localhost:3000/counts?<COUNT_FIELD>=<VALUE>&comparator=<CONDITION>&page=<PAGE NO>```  
-```COUNT_FIELD``` can be one of the following:  
+
+COUNT_FIELD can be one of the following:  
   ```retweet_count```  
   ```favorite_count```  
   ```userfollower_count```  
 
-comparator ```CONDITION``` can be one of the following:  
+comparator CONDITION can be one of the following:  
   ```eq``` for equal  
   ```lt``` for less than  
   ```gt``` for greater than  

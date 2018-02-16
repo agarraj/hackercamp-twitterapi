@@ -27,7 +27,7 @@ To search a tweet text:
 request: ```localhost:3000/searchTT?tweettext=<text of tweet>&page=<page no>```  
 eg: ```localhost:3000/searchTT?tweettext=happy birthday&page=2```  
   
-To search screen name of a user:
+To search screen name of a user:  
 request: ```localhost:3000/searchTT?screen_name=<screen name>&page=<page no>```  
 eg: ```localhost:3000/searchTT?screen_name=rajat.a&page=1```  
   
@@ -39,12 +39,12 @@ eg: ```localhost:3000/searchTT?language=en&page=10```
 Filter requests follow following format:
 ```localhost:3000/filter/<FILTERING_FIELD>?<FILTERING_CRITERIA>=<FILTER_STRING>&page=<page no>```  
 
-FILTERING_FIELD can be one of following (without angle brackets):
-  username
-  screen_name
-  tweettext
-  urls
-  user_mentions
+```FILTERING_FIELD``` can be one of following (without angle brackets):  
+  ```username  
+  screen_name  
+  tweettext  
+  urls  
+  user_mentions```  
   
 FILTERING_CRITERIA can be one of the following:
   startswith
